@@ -1,5 +1,24 @@
-# Logs
-logs
+# Development environment
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.pytest_cache/
+
+# Dependencies
+node_modules/
+dist/
+dist-ssr/
+*.local
+build/
+
+# Logs and debugging
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,19 +26,37 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Project-specific data directories
+uploads/
+results/
+temp_audio/
+temp_audio_for_diarization/
+downloads/
+exports/
+progress/
 
-# Editor directories and files
+# Media files
+*.wav
+*.mp3
+*.mp4
+*.m4a
+*.ogg
+*.webm
+
+# Editor and OS files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-.env
+Thumbs.db
+
+# Package files
+*.gz
+*.tar
+*.zip
+*.rar
